@@ -1,0 +1,16 @@
+{%extends 'layout.html'%}
+
+{%block body%}
+<h1 class="book-title">#shivaro boek title</h1>
+<div class="full-tekst">
+    <a href="{{url_for('shivaro')}}" class="important_button"><<--Terug</a>
+    <a href="{{url_for('edit_paragraph_sboek')}}" class="important_button0">Corrigeren??</a>
+    <p class="par">
+        {{para}}
+    </p>
+
+    <a href="{{url_for('edit_paragraph_sboek')}}" class="important_button0">Corrigeren??</a>
+</div>
+
+
+{%endblock%}

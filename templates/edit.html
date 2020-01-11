@@ -1,0 +1,15 @@
+{%extends 'layout.html'%}
+
+{%block body%}
+    <a href="{{url_for('xala')}}" class="important_button"><<--Terug</a>
+    <fieldset class="field-corrigeerpage">
+        <legend style="text-align:center">Corrigeer page</legend>
+        <form action="#" method="post">
+            <input class="pin" placeholder="Enter the secret code" name="PIN" required>
+            <textarea class="edit_field" name="TEXT">{{ para }}</textarea>
+            <br>
+            <input type="submit" value="submit" style="background-color:green;font-weight:bold;padding:0.5vw;margin-left:4vw;">
+        </form>
+    </fieldset>
+
+{%endblock%}

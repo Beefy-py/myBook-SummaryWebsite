@@ -1,0 +1,52 @@
+{% extends 'layout.html'%}
+
+{%block body%}
+
+        <header id="home-header">
+            <h2>Boek verslag van?</h2>
+        </header>
+
+        <aside class="navigation-names">
+            <a href="{{url_for('home')}}" class="btn" id="btnhome">HOME</a>
+            <a href="{{url_for('kenny')}}" class="btn" id="btnk">Kenny</a>
+            <a href="{{url_for('shivaro')}}" class="btn" id="btns">Shivaro</a>
+            <a href="{{url_for('cerano')}}" class="btn" id="btnc">Cerano</a>
+            <a href="{{url_for('xafy')}}" class="btn" id="btnx">Xafy</a>
+        </aside>
+
+        <article class="home-content">
+            <div class="body-home">
+                <h1 class="home-text">
+                    <span>W</span><span>elcome</span>
+                    <span>T</span><span>o</span>
+                    <span>K</span><span>enny's</span>
+                    <span>B</span><span>oek</span>
+                    <span>V</span><span>erslag</span>
+                    <span>W</span><span>ebsite</span>
+                </h1>
+            </div>
+            <section class="section-content-home">
+                <div id="about">
+                        <div id="dropdown">
+                            <button class="dropbtn">Translate</button>
+                            <div class="dropdown-content">
+                                <button onclick="translate_to_english()">English</button>
+                                <button onclick="translate_to_dutch()">Dutch</button>
+                            </div>
+                        </div>
+                    <br>
+                    <p id="brief-about">
+                        This website was created by me(Kenny Hoft). I am a middle school student who creates website just for fun.
+                        So it's my Hobby. But this website was created to put my summary on it from the books i read for school.
+                        And i created it so i can hone my web development skills.
+                        I also put the names of the people of my group here so they can write their summaries too.
+                        This website was possible because my teacher allowed it that i made a website to put my summary on it for her to read,
+                        so thanks to her. Enjoy reading!
+                    </p>
+                </div>
+
+            </section>
+        </article>
+    <script src="translate.js">
+    </script>
+{%endblock%}

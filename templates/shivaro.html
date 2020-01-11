@@ -1,0 +1,39 @@
+{% extends 'layout.html'%}
+
+{%block body%}
+    <main>
+
+        <header>
+            <h2>Boek verslag van Shivaro</h2>
+        </header>
+
+        <aside class="navigation-names">
+            <a href="{{url_for('home')}}" class="btn" id="btnhome">HOME</a>
+            <a href="{{url_for('kenny')}}" class="btn" id="btnk">Kenny</a>
+            <a href="{{url_for('shivaro')}}" class="btn" id="btns">Shivaro</a>
+            <a href="{{url_for('cerano')}}" class="btn" id="btnc">Cerano</a>
+            <a href="{{url_for('xafy')}}" class="btn" id="btnx">Xafy</a>
+        </aside>
+
+        <section class="books-s">
+            <a class='book-s' href="/boekverslag-s" style="text-align:center;font-size:27px;">boek-verslag #no info at the moment</a>
+
+        </section>
+
+        <aside id="contact-s">
+            <h3>Ask a question to Shivaro</h3>
+            <div class="border-s"></div>
+            <form class="contact-form-s" action="" method="post" onsubmit="alert('Message sent!')">
+                <input type="text" class='contact-form-text-s' placeholder="Name" name="NAME" required>
+                <input type="text" class='contact-form-text-s' placeholder="Subject" name="SUBJECT" required>
+                <input type="text" class='contact-form-text-s' placeholder="Email" name="EMAIL" required>
+                <textarea class="contact-form-text-s" placeholder="Message" name="MESSAGE" required></textarea>
+                <input type="submit" class="contact-form-btn-s" value="Send" >
+            </form>
+        </aside>
+
+        <div class="footer">Footer</div>
+
+    </main>
+
+{%endblock%}

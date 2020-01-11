@@ -1,0 +1,55 @@
+{% extends 'layout.html'%}
+
+{%block body%}
+    <main>
+
+        <header>
+            <h2>Boek verslag van Kenny</h2>
+        </header>
+
+        <aside class="navigation-names">
+            <a href="{{url_for('home')}}" class="btn" id="btnhome">HOME</a>
+            <a href="{{url_for('kenny')}}" class="btn" id="btnk">Kenny</a>
+            <a href="{{url_for('shivaro')}}" class="btn" id="btns">Shivaro</a>
+            <a href="{{url_for('cerano')}}" class="btn" id="btnc">Cerano</a>
+            <a href="{{url_for('xafy')}}" class="btn" id="btnx">Xafy</a>
+        </aside>
+
+        <section class="books-k">
+
+            <a class='book-k' href="/boekverslag-k" style="font-size:27px;"><b>title:</b> Xala<br>
+            <b>thema: </b> de xala<br>
+            <b>auteur: </b> Sembene Ousmane<br>
+            <b>hoofd personen: </b> El Hadji Abdou Kader Beye, Modou, Yay Bineta<br>
+            <b>bij personen: </b> N'gone, Pathe, Rama<br>
+
+            </a>
+
+            <a class='book-k' href="/boekverslag-k2" style="font-size:27px;"><b>title:</b>Lijnen Van Liefde<br>
+            <b>thema: </b> ------<br>
+            <b>auteur: </b> Ismene Krishnadath<br>
+            <b>hoofd personen: </b> Irini, Gita, Glenn<br>
+            <b>bij personen: </b> Pake, Simbah, Terry<br>
+
+            </a>
+
+
+        </section>
+
+        <aside id="contact-k">
+            <h3>Ask a question to Kenny</h3>
+            <div class="border-k"></div>
+            <form class="contact-form-k" action="" method="post" onsubmit="alert('Message sent!')">
+                <input type="text" class='contact-form-text-k' placeholder="Name" name="NAME" required>
+                <input type="text" class='contact-form-text-k' placeholder="Subject" name="SUBJECT" required>
+                <input type="text" class='contact-form-text-k' placeholder="Email" name="EMAIL" required>
+                <textarea class="contact-form-text-k" placeholder="Message" name="MESSAGE" required></textarea>
+                <input type="submit" class="contact-form-btn-k" value="Send" >
+            </form>
+        </aside>
+
+        <div class="footer">Footer</div>
+
+    </main>
+
+{%endblock%}

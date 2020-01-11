@@ -1,0 +1,16 @@
+{%extends 'layout.html'%}
+
+{%block body%}
+<h1 class="book-title">Xala</h1>
+<div class="full-tekst">
+    <a href="{{url_for('kenny')}}" class="important_button"><<--Terug</a>
+    <a href="{{url_for('edit_paragraph')}}" class="important_button0">Corrigeren??</a>
+    <p class="par">
+        {{para}}
+    </p>
+
+    <a href="{{url_for('edit_paragraph')}}" class="important_button0">Corrigeren??</a>
+</div>
+
+
+{%endblock%}
